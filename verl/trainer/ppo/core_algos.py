@@ -494,7 +494,7 @@ def compute_policy_loss_clip_cov(
     pg_losses2 = -advantages * torch.clamp(ratio, 1 - cliprange_low, 1 + cliprange_high)
     clip_by_origin = (pg_losses2 > pg_losses1) & (response_mask > 0)
     
-    cov_all = (advantages- verl_F.masked_mean(advantages, response_mask)) * (log_prob- verl_F.masked_mean(log_prob.detach(), response_mask))
+    cov_all = (advantages- verl_F.masked_mean(advantages, response_mask)) * (log_prob.detach()- verl_F.masked_mean(log_prob.detach(), response_mask))
     cov_all[response_mask == 0] = -torch.inf
     cov_all[clip_by_origin] = -torch.inf
     
