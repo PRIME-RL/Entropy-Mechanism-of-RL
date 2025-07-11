@@ -25,7 +25,7 @@
 
 # 🎉News
 
-- **[2025/06/20]** 🎉 **Our methods KL_Cov and Clip_Cov are merged into [verl](https://github.com/volcengine/verl/pull/1830)!** One can use our method easily in verl with setting loss_mode as "clip_cov" or "kl_cov", an example script in verl can be found [here](https://github.com/volcengine/verl/blob/main/recipe/entropy/32b_kl_cov.sh).
+- **[2025/06/20]** 🎉 **Our KL_Cov and Clip_Cov are merged into [verl](https://github.com/volcengine/verl/pull/1830)!** One can use our method easily in verl main with setting loss_mode as "clip_cov" or "kl_cov", an example script in verl can be found [here](https://github.com/volcengine/verl/blob/main/recipe/entropy/32b_kl_cov.sh).
 - **[2025/06/04]** Sent a PR to verl, one can use our approaches in verl with PR [#1830](https://github.com/volcengine/verl/pull/1830).
 - **[2025/06/03]** 🎉 Ranked **#3** of the week on [Huggingface Weekly Papers](https://huggingface.co/papers/week/2025-W22).
 - **[2025/05/29]** 🎉 Ranked **#1** of the day on [Huggingface Daily Papers](https://huggingface.co/papers?date=2025-05-29).
